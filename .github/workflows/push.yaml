@@ -1,0 +1,20 @@
+name: push
+
+on: push
+
+jobs:
+  push:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: >-
+            -f=markdown
+            -t=pdf
+            -o=resume.pdf
+            -V=geometry:margin=1in
+            resume.md
+      - uses: actions/upload-artifact@v3
+        with:
+            name: output
+            path: output
