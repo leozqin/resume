@@ -31,6 +31,9 @@ jobs:
         with:
           name: resume
           path: $GITHUB_WORKSPACE
+      - name: ls
+        run: ls -ltra
+        working-directory: $GITHUB_WORKSPACE
       - name: Unzip
         run: unzip $GITHUB_WORKSPACE/resume.zip
       - name: Release
