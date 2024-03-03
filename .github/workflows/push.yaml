@@ -26,6 +26,8 @@ jobs:
     needs: build
     if: success() && github.ref == 'refs/heads/main'
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: Download a single artifact
         uses: actions/download-artifact@v3
         with:
