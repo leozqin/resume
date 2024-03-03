@@ -30,9 +30,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: resume
+          path: $GITHUB_WORKSPACE
       - name: Unzip
-        run: unzip resume.zip
+        run: unzip $GITHUB_WORKSPACE/resume.zip
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: resume.pdf
+          files: $GITHUB_WORKSPACE/resume.pdf
