@@ -1,0 +1,38 @@
+name: push
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: install pandoc and latex
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb
+          sudo dpkg -i pandoc-2.9.2.1-1-amd64.deb
+          sudo apt install texlive
+          sudo fmtutil-sys --all
+      - name: make pdf
+        run: make pdf
+      - name: upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume
+          path: resume.pdf
+  release:
+    runs-on: ubuntu-22.04
+    needs: build
+    if: success() && github.ref == 'refs/heads/master'
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: resume
+      - name: Unzip
+        run: unzip resume.zip
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: resume.pdf
