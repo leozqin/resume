@@ -9,6 +9,10 @@ jobs:
       image: pandoc/latex:2.9
     steps:
       - uses: actions/checkout@v2
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: build-essential
+          version: 1.0
       - run: make pdf
       - uses: actions/upload-artifact@v3
         with:
