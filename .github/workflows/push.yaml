@@ -33,8 +33,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: resume
-      - run: unzip resume.zip
+      - name: Unzip
+        run: unzip resume.zip
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: Release.txt
+          files: resume.pdf
