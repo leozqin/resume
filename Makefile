@@ -1,3 +1,5 @@
+SHELL=/bin/bash
+
 .PHONY: install
 install:
 	brew install pandoc
