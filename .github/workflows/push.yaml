@@ -31,7 +31,16 @@ jobs:
         with:
           name: resume
           path: $GITHUB_WORKSPACE
+      - name: Tag the repository
+        id: tag
+        run: |
+          TAG=v$(date -Iseconds | sed 's/[T:\+]/-/g')
+          echo "$TAG"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
+          git push origin $TAG
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: $GITHUB_WORKSPACE/resume.pdf
+          tag_name: ${{ steps.tag.outputs.tag }}
