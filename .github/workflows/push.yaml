@@ -9,10 +9,10 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
-            -f=markdown
-            -t=pdf
-            -o=resume.pdf
-            -V=geometry:margin=1in
+            -f markdown
+            -t pdf
+            -o resume.pdf
+            -V geometry:margin=1in
             resume.md
       - uses: actions/upload-artifact@v3
         with:
