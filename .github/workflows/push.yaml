@@ -5,8 +5,6 @@ on: push
 jobs:
   push:
     runs-on: ubuntu-22.04
-    container:
-      image: pandoc/latex:2.9
     steps:
       - uses: actions/checkout@v2
       - run: |
