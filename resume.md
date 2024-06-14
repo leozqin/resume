@@ -1,7 +1,12 @@
-# Leo Qin - Principal Data Engineer
+# Leo Qin - Data/Software Engineer
+
+## Contact
+- Email: leozqin@gmail.com
+- Web: [leozqin.me](https://www.leozqin.me)
+- Github: [leozqin](https://www.leozqin.me/go/github)
 
 ## About Me
-I am a product-focused data engineer with strong proficiency in systems architecture, infrastructure, and R&D. I have substantial subject matter experience in identity resolution, payments, lending, and fraud detection. Prior experience/background in product management, data science, and applied machine learning.
+Product-focused software engineer with strong proficiency in data infrastructure and science/R&D with a bias toward quality. Subject matter experience in identity resolution, payments, lending, and fraud detection. Prior experience/background in product management, data science, and applied machine learning.
 
 ## History
 - Staff Data Engineer at Wisetack (Aug 2022 - Present)
@@ -29,13 +34,16 @@ I am a product-focused data engineer with strong proficiency in systems architec
     - Customer education during integration phase through test design, API request/response analysis, and implementation of reporting solutions out of Oracle data warehouse environment to track future outcomes, metrics, and KPIs
     - Serve as key contact within the escalations path for technical and business issues, ongoing subject matter expertise in business processes and industry best practices regarding such topics as cybersecurity, user experience, and data aggregation and reporting
 
+## Open Source Projects
+- [Precis](https://github.com/leozqin/precis) - self-hosted extensibility-oriented RSS reader with reading mode that can send notifications via common messaging services and use LLMs to summarize articles. Supports theming, OPML import/export, backups, composable configurations, and management CLI.
+
 ## Tools and Languages
-- Languages: Python, SQL, bash/shell script
-- Data Transformation: dbt, SparkSQL/pyspark
-- Data Orchestration: Dagster, Airflow
-- Data Ingestion: AWS Glue, Airbyte
-- Data Compute: AWS EMR, AWS Athena (Trino/Presto)
-- Data Storage: AWS S3, AWS DynamoDB, HDFS
-- Data Permissions: AWS Lakeformation, AWS IAM, AWS SSO
-- Infrastructure: Terraform, Pulumi, Docker (Compose), Kubernetes
-- CI/CD: Gitlab CI, GitHub Actions, Drone CI
+- **Languages**: Python, SQL, bash/shell script
+- **Tools**: dbt, SparkSQL/pyspark, Dagster, Airflow, Airbyte, Trino, Presto, Tableau, FastAPI, LMDB, Slack SDK, Playwright, Pydantic, OpenAI API, Ollama API, Hugo, Pandoc, Tailwind CSS
+- **Infrastructure**: Terraform, Pulumi, Docker (Compose), Kubernetes
+- **CI/CD**: Gitlab CI, GitHub Actions, Drone CI
+- **AWS**: EMR, Athena, Glue, s3, DynamoDB, LakeFormation, IAM, SSO (Identity Center), Sagemaker
+
+---
+
+View the source code for this resume [here](https://github.com/leozqin/resume)
