@@ -1,4 +1,4 @@
-# Leo Qin - Data/Software Engineer
+# Leo Qin - Software Engineer
 
 ## Contact
 - Email: leozqin@gmail.com
@@ -6,7 +6,7 @@
 - Github: [leozqin](https://www.leozqin.me/go/github)
 
 ## About Me
-Product-focused software engineer with strong proficiency in data infrastructure and science/R&D with a bias toward quality. Subject matter experience in identity resolution, payments, lending, and fraud detection. Prior experience/background in product management, data science, and applied machine learning.
+Product-focused software engineer with strong proficiency in data infrastructure and science/R&D. Subject matter experience in identity resolution, payments, lending, and fraud detection. Prior experience/background in product management, data science, and applied machine learning.
 
 ## History
 - Staff Data Engineer at Wisetack (Aug 2022 - Present)
@@ -14,6 +14,7 @@ Product-focused software engineer with strong proficiency in data infrastructure
     - Design, implement, and maintain a platform for designing, training, and deploying machine learning models on AWS Sagemaker
     - Implement access control and PII hashing/permissioning scheme using single sign-on (SSO) on AWS IAM Identity Center.
     - Onboard over 30 users to the platform, including ~10 non-engineering (credit/analytics team) developers requiring development environments, local setup, and mentorship
+    - Design and implement CI/CD workflow and data security and access control scheme for Salesforce
     - Architecture: Airbyte for data ingestion, dbt for data transformation, Dagster Cloud for orchestration, AWS Athena for compute
 - Data Science Manager at Spokeo (Dec 2018 - Aug 2022)
     - Tech lead, product owner, and software architect. Primary focus is on complete rebuild of multi-source entity resolution system. 
@@ -36,10 +37,12 @@ Product-focused software engineer with strong proficiency in data infrastructure
 
 ## Open Source Projects
 - [Precis](https://github.com/leozqin/precis) - self-hosted extensibility-oriented RSS reader with reading mode that can send notifications via common messaging services and use LLMs to summarize articles. Supports theming, OPML import/export, backups, composable configurations, and management CLI.
+- [HOPS](https://github.com/leozqin/hops) - Heterogeneous Ollama Proxy Server (HOPS) is a load-balancing reverse proxy server that enables users to address a fleet of diverse Ollama instances as a single one.
+- [Local Library](https://github.com/leozqin/local-library) - An ePub library and metadata scanner that happily works on a read-only filesystem.
 
 ## Tools and Languages
-- **Languages**: Python, SQL, bash/shell script
-- **Tools**: dbt, SparkSQL/pyspark, Dagster, Airflow, Airbyte, Trino, Presto, Tableau, FastAPI, LMDB, Slack SDK, Playwright, Pydantic, OpenAI API, Ollama API, Hugo, Pandoc, Tailwind CSS
+- **Languages**: Python, SQL, bash/shell script, Golang, Typescript, Nix
+- **Tools/Frameworks**: dbt, SparkSQL/pyspark, Dagster, Airflow, Airbyte, Trino, Presto, Tableau, FastAPI, LMDB, Slack SDK, Playwright, Pydantic, OpenAI, Ollama, Hugo, Pandoc, Tailwind CSS, Astro.js, Salesforce
 - **Infrastructure**: Terraform, Pulumi, Docker (Compose), Kubernetes
 - **CI/CD**: Gitlab CI, GitHub Actions, Drone CI
 - **AWS**: EMR, Athena, Glue, s3, DynamoDB, LakeFormation, IAM, SSO (Identity Center), Sagemaker
