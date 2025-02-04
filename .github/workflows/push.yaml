@@ -17,7 +17,7 @@ jobs:
       - name: make pdf
         run: make pdf
       - name: upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: resume
           path: resume.pdf
@@ -29,7 +29,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Download a single artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: resume
           path: $GITHUB_WORKSPACE
