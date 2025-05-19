@@ -17,3 +17,9 @@ Make changes to `resume.md` and then do:
 ```
 make pdf
 ```
+Distrobox:
+```
+podman build . --tag resume
+distrobox create --name resume --image localhost/resume:latest
+distrobox enter resume
+```
